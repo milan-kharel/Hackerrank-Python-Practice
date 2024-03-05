@@ -1,8 +1,10 @@
 import numpy
 
-# Create NumPy arrays dynamically
-a = numpy.array([[1, 2, 3, 4]], int)  # Create a 2D NumPy array 'a' with integer values
-b = numpy.array([[5, 6, 7, 8]], int)  # Create a 2D NumPy array 'b' with integer values
+N, M = map(int, input().split())
+
+a = numpy.array([list(map(int, input().split())) for n in range(N)])
+
+b = numpy.array([list(map(int, input().split())) for n in range(N)])
 
 # Perform various operations on the arrays
 
